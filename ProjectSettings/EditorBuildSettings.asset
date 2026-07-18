@@ -9,5 +9,8 @@ EditorBuildSettings:
     path: Assets/Scenes/SampleScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
   m_configObjects:
+    ByteDance.PICO.XR.Settings: {fileID: 11400000, guid: f9b335dbb15514fdf8199c5fd0464f61, type: 2}
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: ff62681caf5094ba8aba9c190775f402, type: 2}
+    com.unity.xr.openxr.settings4: {fileID: 11400000, guid: 6ab01f6f2e3d043308db90266f5e3654, type: 2}
   m_UseUCBPForAssetBundles: 0
