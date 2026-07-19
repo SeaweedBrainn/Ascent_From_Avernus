@@ -8,18 +8,17 @@ public class EnvironmentInteraction : MonoBehaviour
     public GameObject rapier;
     public XRGrabInteractable rapierInteractable;
     public GameObject player;
-    public GameObject dukeRavenguard;
+    public GameObject ravenguardPlatform;
+
     void Update()
     {
         if (game01.rotateUsed == false) return;
         if (Vector3.Distance(rapier.transform.position, player.transform.position) < 10f) game01.swordFound = true;
-        
+
         if (rapierInteractable.isSelected)
         {
             game01.swordPickedUp = true;
             Destroy(rapier);
         }
-        
-        if (Vector3.Distance(dukeRavenguard.transform.position, player.transform.position) < 10f) game01.meetingRavenguard = true;
     }
 }

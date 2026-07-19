@@ -6,7 +6,12 @@ ModelImporter:
   - first:
       74: 7400000
     second: Zombie Run
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Base Palette Material
+    second: {fileID: 2100000, guid: 9845b38987b69224ca6524623f877af8, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

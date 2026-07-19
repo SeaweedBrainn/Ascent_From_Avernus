@@ -8,6 +8,8 @@ public class DiceManager : MonoBehaviour
     public Material defaultMaterial;
     public Material rolledMaterial;
 
+    public AudioSource rolledSound;
+    
     [Header("Spin Settings")]
     public float spinDuration = 1.2f;       // how long the fake spin lasts
     public float spinSpeed = 720f;          // degrees per second, tune to taste
@@ -21,6 +23,7 @@ public class DiceManager : MonoBehaviour
     {
         currentDice = Instantiate(dicePrefab, spawnPoint.position, Quaternion.identity);
         currentDice.tag = "Dice";
+        rolledSound = currentDice.GetComponent<AudioSource>();
     }
     
     public void RollDice()
@@ -44,7 +47,7 @@ public class DiceManager : MonoBehaviour
     {
         isRolling = true;
         float elapsed = 0f;
-
+        rolledSound.Play();
         while (elapsed < spinDuration)
         {
             float t = elapsed / spinDuration;

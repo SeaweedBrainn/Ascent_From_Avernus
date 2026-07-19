@@ -85,7 +85,7 @@ public class StoryBoard : MonoBehaviour
 
         text = "";
         uiTextBox.text = text;
-        yield return new WaitUntil(() => game01.meetingRavenguard);
+        yield return new WaitForSecondsRealtime(3);
         
         text = "You spot Grand Duke Ulder Ravenguard amid the chaos of people running around.";
         displayTextOnce(uiTextBox, text);
