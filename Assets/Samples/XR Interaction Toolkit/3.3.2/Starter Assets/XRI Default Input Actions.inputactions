@@ -3429,6 +3429,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
+                },
+                {
+                    "name": "X_Button",
+                    "type": "Button",
+                    "id": "95cb43c8-7470-4b53-a2bf-02246eaae321",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -3462,6 +3471,17 @@
                     "processors": "",
                     "groups": "",
                     "action": "RightJoystick",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "05ef7809-1e36-455a-954d-bbb9b44ec53f",
+                    "path": "<XRController>{LeftHand}/{PrimaryButton}",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "X_Button",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
