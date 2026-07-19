@@ -64,6 +64,8 @@ ExportedObj/
 *.VC.db
 
 *.DS_Store
+Ascent_From_Avernus_BackUpThisFolder_ButDontShipItWithYourGame/
+Ascent_From_Avernus_BurstDebugInformation_DoNotShip/
 
 # Unity3D generated meta files
 *.pidb.meta
