@@ -11,9 +11,12 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Samples/XR Interaction Toolkit/3.3.2/Starter Assets/DemoScene.unity
     guid: 319dafa5c80f29f428dc1e0d03f04177
-  - enabled: 1
+  - enabled: 0
     path: Assets/MainScene.unity
     guid: a2fd6c915b8894c39969e550be6a839f
+  - enabled: 1
+    path: Assets/DiceRoller.unity
+    guid: cc2db03d2f1ba6747bef826fbf5bb635
   m_configObjects:
     ByteDance.PICO.XR.Settings: {fileID: 11400000, guid: f9b335dbb15514fdf8199c5fd0464f61, type: 2}
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
