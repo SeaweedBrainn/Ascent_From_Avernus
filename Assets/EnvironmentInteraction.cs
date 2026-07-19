@@ -14,13 +14,12 @@ public class EnvironmentInteraction : MonoBehaviour
         if (game01.rotateUsed == false) return;
         if (Vector3.Distance(rapier.transform.position, player.transform.position) < 10f) game01.swordFound = true;
         
-        if (game01.swordFound == false) return;
         if (rapierInteractable.isSelected)
         {
             game01.swordPickedUp = true;
             Destroy(rapier);
         }
-        if (game01.swordPickedUp == false) return;
         
+        if (Vector3.Distance(dukeRavenguard.transform.position, player.transform.position) < 10f) game01.meetingRavenguard = true;
     }
 }

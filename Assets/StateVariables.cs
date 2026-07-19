@@ -21,4 +21,19 @@ public class StateVariables : ScriptableObject
     public bool choiceAAvailable = false;
     public bool choiceAX = false;
     public bool choiceAY = false;
+
+    public bool choiceBAvailable = false;
+    public bool choiceBX = false;
+    public bool choiceBY = false;
+    
+    public bool choiceCAvailable = false;
+    public bool choiceCX = false;
+    public bool choiceCY = false;
+    
+    public bool choiceDAvailable = false;
+    public bool choiceDX = false;
+    public bool choiceDY = false;
+    
+    public bool diceTutorialDone = false;
 }
+

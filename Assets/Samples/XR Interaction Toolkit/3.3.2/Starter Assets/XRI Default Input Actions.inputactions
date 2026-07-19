@@ -3447,6 +3447,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "Y_Button",
+                    "type": "Button",
+                    "id": "8b119825-6bda-4386-9359-188ca9814587",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -3502,6 +3511,17 @@
                     "processors": "",
                     "groups": "",
                     "action": "RightTriggerPress",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "feabe314-62ea-49a7-a83a-996c29ca3d84",
+                    "path": "<XRController>{LeftHand}/secondaryButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Y_Button",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

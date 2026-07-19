@@ -8,6 +8,7 @@ public class ButtonInputs : MonoBehaviour
     public InputActionReference LeftJoystick;
     public InputActionReference RightJoystick;
     public InputActionReference X_Button;
+    public InputActionReference Y_Button;
 
     public GameObject inventory;
 
@@ -23,6 +24,9 @@ public class ButtonInputs : MonoBehaviour
         RightJoystick.action.started += UseRotate;
 
         X_Button.action.started += ToggleInventory;
+        X_Button.action.started += Choices_X;
+        
+        Y_Button.action.started += Choices_Y;
     }
 
     void OnDestroy()
@@ -37,6 +41,58 @@ public class ButtonInputs : MonoBehaviour
         RightJoystick.action.started -= UseRotate;
 
         X_Button.action.started -= ToggleInventory;
+        X_Button.action.started -= Choices_X;
+
+        Y_Button.action.started -= Choices_Y;
+    }
+
+    void Choices_X(InputAction.CallbackContext context)
+    {
+        if (game01.choiceAAvailable)
+        {
+            game01.choiceAX = true;
+            game01.choiceAAvailable = false;
+        }
+
+        if (game01.choiceBAvailable)
+        {
+            game01.choiceBX = true;
+            game01.choiceBAvailable = false;
+        }
+
+        if (game01.choiceCAvailable)
+        {
+            game01.choiceCAvailable = false;game01.choiceCX = true;
+        }
+
+        if (game01.choiceDAvailable)
+        {
+            game01.choiceDAvailable = false; game01.choiceDX = true;
+        }
+    }
+    
+    void Choices_Y(InputAction.CallbackContext context)
+    {
+        if (game01.choiceAAvailable)
+        {
+            game01.choiceAY = true;
+            game01.choiceAAvailable = false;
+        }
+
+        if (game01.choiceBAvailable)
+        {
+            game01.choiceBAvailable = false; game01.choiceBY = true;
+        }
+
+        if (game01.choiceCAvailable)
+        {
+            game01.choiceCAvailable = false; game01.choiceCY = true;
+        }
+
+        if (game01.choiceDAvailable)
+        {
+            game01.choiceDAvailable = false; game01.choiceDY = true;
+        }
     }
 
     void PressPlay(InputAction.CallbackContext obj)
@@ -80,6 +136,10 @@ public class ButtonInputs : MonoBehaviour
             inventory.SetActive(false);
             return;
         }
+        
+        if (game01.choiceAAvailable || game01.choiceBAvailable || game01.choiceCAvailable || game01.choiceDAvailable)
+            return;
+        
         if (inventory.activeInHierarchy == false)
         {
             if (game01.swordPickedUp == true) game01.inventoryChecked = true;
