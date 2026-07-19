@@ -8,6 +8,7 @@ public class EnvironmentInteraction : MonoBehaviour
     public GameObject rapier;
     public XRGrabInteractable rapierInteractable;
     public GameObject player;
+    public GameObject dukeRavenguard;
     void Update()
     {
         if (game01.rotateUsed == false) return;

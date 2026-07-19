@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Serialization;
 
@@ -9,7 +10,15 @@ public class StateVariables : ScriptableObject
     public bool rotateUsed = false;
     public bool swordFound = false;
     public bool swordPickedUp = false;
-    public string[] inventory;
+    public List<string> inventory = new List<string>();
     public bool inventoryChecked = false;
     public bool inventoryClosed = false;
+    public bool diceAvailable = false;
+    public bool diceMenuCloseAvailable = false;
+
+    public bool meetingRavenguard = false;
+    
+    public bool choiceAAvailable = false;
+    public bool choiceAX = false;
+    public bool choiceAY = false;
 }
